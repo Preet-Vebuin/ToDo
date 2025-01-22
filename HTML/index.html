@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="/CSS/styles.css">
+  <script src="/Javascript/script.js" defer></script>
+
+  <script ></script>
+  <style>
+    /* Reset */
+   
+  </style>
+</head>
+<body>
+  <header>
+    <h1>To-Do List</h1>
+  </header>
+
+  <main>
+    <!-- Form Section -->
+    <section class="form-section">
+      <form id="todo-form">
+        <div>
+          <label for="title">Title:</label>
+          <input type="text" id="title" name="title" required>
+        </div>
+
+        <div>
+          <label for="description">Description:</label>
+          <textarea id="description" name="description" rows="3"></textarea>
+        </div>
+
+        <div>
+          <label for="priority">Priority:</label>
+          <select id="priority" name="priority">
+            <option value="High">High</option>
+            <option value="Medium">Medium</option>
+            <option value="Low">Low</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="due-date">Due Date:</label>
+          <input type="date" id="due-date" name="due-date" required>
+        </div>
+
+        <button type="submit">Add To-Do</button>
+      </form>
+    </section>
+
+    <!-- To-Do List Section -->
+    <section class="todo-list-section">
+      <div class="search-bar">
+        <input type="text" id="search" placeholder="Search your to-dos...">
+      </div>
+
+      <h2>Your To-Dos</h2>
+      <div id="todo-list" class="todo-list">
+        <!-- Dynamic To-Do Items Will Appear Here -->
+      </div>
+    </section>
+  </main>
+
+ 
+ </body>
+</html>
